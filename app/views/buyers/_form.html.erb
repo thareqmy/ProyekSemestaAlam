@@ -1,0 +1,37 @@
+<h1>Create New Buyers</h1>
+
+<% if @buyer.errors.any? %>
+  <h2> The following errors : </h2>
+  <ul>
+    <% @buyer.errors.full_masages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+
+
+<%= form_for @buyer do |f| %>
+
+  <%= f.label :nama %> <br>
+  <%= f.text_field :nama %> <br>
+
+
+  <%= f.label :nohp, "No. Hp" %> <br>
+  <%= f.text_field :nohp %> <br>
+
+  <%= f.label :alamat %> <br>
+  <%= f.text_field :alamat %> <br>
+
+  <%= f.label :email %> <br>
+  <%= f.text_field :email %> <br>
+
+  <%= f.label :facebook %> <br>
+  <%= f.text_field(:facebook) %> <br>
+
+  <%= f.label :jeniskelamin, "Jenis Kelamin : " %> <br>
+  <%= f.text_field(:jeniskelamin) %> <br>
+
+  <%= f.submit("Submit pembeli") %>
+
+<% end %>

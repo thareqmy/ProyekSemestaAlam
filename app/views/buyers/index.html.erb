@@ -1,0 +1,19 @@
+<h1>List of Buyer</h1>
+
+<table>
+  <tr>
+    <th>Nama</th>
+    <th>Alamat</th>
+    <th>No. Hp</th>
+  </tr>
+  <% @buyer.each do |buyer| %>
+    <tr>
+      <td> <%= buyer.nama %> </td>
+      <td> <%= buyer.alamat %> </td>
+      <td> <%= buyer.nohp %> </td>
+      <td> <%= link_to "Edit", edit_buyer_path(buyer) %></td>
+      <td> <%= link_to "Show", buyer_path(buyer) %></td>
+      <td> <%= link_to "Destroy", buyer_path(buyer), method: :delete %> </td>
+    </tr>
+  <% end %>
+</table>

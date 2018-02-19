@@ -10,13 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180218090026) do
+ActiveRecord::Schema.define(version: 20180218215231) do
 
   create_table "buyers", force: :cascade do |t|
     t.string "nama"
     t.string "nohp"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "alamat"
+    t.string "nohpwa"
+    t.string "email"
+    t.string "facebook"
+    t.string "jeniskelamin"
   end
 
 end
