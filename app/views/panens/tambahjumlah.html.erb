@@ -1,0 +1,8 @@
+<h1>PANEN TEROOSS</h1>
+
+<%= form_for(@panen, url: tambahjumlah_path) do |f| %>
+  <%= f.label(:tambah, "Masukkan jumlah panen") %>
+  <%= f.number_field(:tambah) %>
+
+  <%= f.submit %>
+<% end %>

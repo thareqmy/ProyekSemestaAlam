@@ -1,0 +1,16 @@
+<h1> List of Vegetables </h1>
+
+<table>
+  <tr>
+    <th>Jenis</th>
+    <th>Jumlah</th>
+  </tr>
+  <% @vegetable.each do |vegetable| %>
+    <tr>
+      <td> <%= vegetable.jenis %> </td>
+      <td> <%= vegetable.jumlah %> </td>
+      <td> <%= link_to 'panen', tambahjumlah_path(vegetable) %> </td>
+    </tr>
+
+  <% end %>
+</table>

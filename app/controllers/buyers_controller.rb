@@ -6,6 +6,7 @@ class BuyersController < ApplicationController
 
   def create
     @buyer = Buyer.new(buyer_params)
+    @buyer.user = User.first
     if @buyer.save
       flash[:notice] = "Buyer was succesfully created"
       redirect_to buyer_path(@buyer)

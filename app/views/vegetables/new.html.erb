@@ -1,0 +1,11 @@
+<h1>Create New Vegetable</h1>
+
+<%= form_for @vegetable do |f| %>
+  <%= f.label(:jenis) %> <br>
+  <%= f.text_field(:jenis) %> <br>
+
+  <%= f.label(:jumlah) %> <br>
+  <%= f.number_field(:jumlah) %> <br>
+
+  <%= f.submit("Submit Vegetables") %>
+<% end %>
