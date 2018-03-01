@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fdf91599-5a80-42f9-96de-cce6521e4a3c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-    </list>
+    <list default="true" id="fdf91599-5a80-42f9-96de-cce6521e4a3c" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/public/system/" />
@@ -200,7 +198,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="574" />
     <option name="y" value="61" />
     <option name="width" value="707" />
@@ -470,15 +468,15 @@
       <workItem from="1519783284494" duration="4640000" />
       <workItem from="1519879930343" duration="4912000" />
       <workItem from="1519906258630" duration="262000" />
-      <workItem from="1519910018162" duration="492000" />
+      <workItem from="1519910018162" duration="720000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60370000" />
+    <option name="totallyTimeSpent" value="60598000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="574" y="61" width="707" height="680" extended-state="1" />
+    <frame x="574" y="61" width="707" height="680" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23196605" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
