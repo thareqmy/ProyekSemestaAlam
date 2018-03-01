@@ -1,4 +1,7 @@
 class VegetablesController < ApplicationController
+
+  before_action :require_user, :current_user
+
   def new
     @vegetable = Vegetable.new
   end
@@ -30,9 +33,6 @@ class VegetablesController < ApplicationController
   private
     def vegetable_params
       params.require(:vegetable).permit(:jenis, :jumlah)
-    end
-    def vegetable_tambahpanen
-      params[:tambahpanen]
     end
 
 end

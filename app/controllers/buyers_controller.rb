@@ -1,12 +1,14 @@
 class BuyersController < ApplicationController
 
+  before_action :current_user
+
   def new
     @buyer = Buyer.new
   end
 
   def create
     @buyer = Buyer.new(buyer_params)
-    @buyer.user = User.first
+    @buyer.user_id = @current_user.id
     if @buyer.save
       flash[:notice] = "Buyer was succesfully created"
       redirect_to buyer_path(@buyer)

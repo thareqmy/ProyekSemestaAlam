@@ -1,0 +1,26 @@
+<%= form_for @transaction do |f| %>
+  <p>Daftar Pembeli : </p>
+  <ol>
+    <% @buyer.each do |g| %>
+      <li><%= g.nama %></li>
+    <% end %>
+  </ol>
+
+  <%= f.label(:buyer_id) %> <br>
+  <%= f.number_field(:buyer_id) %> <br>
+
+  <p>Daftar sayuran : </p>
+  <ol>
+    <% @vegetable.each do |g| %>
+      <li><%= g.jenis %></li>
+    <% end %>
+  </ol>
+
+  <%= f.label(:vegetable_id) %> <br>
+  <%= f.number_field(:vegetable_id) %> <br>
+
+  <%= f.label(:jumlahtransaksi) %> <br>
+  <%= f.number_field(:jumlahtransaksi) %> <br>
+
+  <%= f.submit("Lakukan Transaksi") %> <br>
+<% end %>
