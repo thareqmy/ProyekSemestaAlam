@@ -36,7 +36,7 @@ class BuyersController < ApplicationController
   end
 
   def index
-    @buyer = Buyer.all
+    @buyer = current_user.buyers
   end
 
   def destroy
