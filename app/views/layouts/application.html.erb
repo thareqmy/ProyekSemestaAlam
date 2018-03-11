@@ -9,7 +9,10 @@
   </head>
 
   <body>
-    <%= render 'layouts/massages' %>
+    <% if logged_in? %>
+      <%= render 'layouts/navigation' %>
+      <%= render 'layouts/massages' %>
+    <% end %>
     <%= yield %>
   </body>
 </html>

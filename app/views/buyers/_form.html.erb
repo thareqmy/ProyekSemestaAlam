@@ -1,21 +1,10 @@
 <h1>Create New Buyers</h1>
 
-<% if @buyer.errors.any? %>
-  <h2> The following errors : </h2>
-  <ul>
-    <% @buyer.errors.full_masages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-  </ul>
-<% end %>
-
-
-
 <%= form_for @buyer do |f| %>
-
-  <%= f.label :nama %> <br>
-  <%= f.text_field :nama %> <br>
-
+  <div class="form-group">
+    <%= f.label :nama %> <br>
+    <%= f.text_field :nama, class: "form-control", placeholder: "Masukkan nama" %> <br>
+  </div>
 
   <%= f.label :nohp, "No. Hp" %> <br>
   <%= f.text_field :nohp %> <br>

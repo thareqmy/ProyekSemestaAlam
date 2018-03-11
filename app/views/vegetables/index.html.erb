@@ -1,19 +1,22 @@
 <h1> List of Vegetables </h1>
 
-<table>
-  <tr>
-    <th>Jenis</th>
-    <th>Jumlah</th>
-  </tr>
-  <% @vegetable.each do |vegetable| %>
-    <tr>
-      <td> <%= vegetable.jenis %> </td>
-      <td> <%= vegetable.jumlah %> </td>
-      <td> <%= link_to 'panen', tambahjumlah_path(vegetable) %> </td>
-    </tr>
-
-  <% end %>
-</table>
+<div class="col-sm-7">
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th>Jenis</th>
+        <th>Jumlah</th>
+      </tr>
+    </thead>
+    <% @vegetable.each do |vegetable| %>
+      <tr>
+        <td> <%= vegetable.jenis %> </td>
+        <td> <%= vegetable.jumlah %> </td>
+        <td> <%= link_to 'Panen', tambahjumlah_path(vegetable) %> </td>
+      </tr>
+    <% end %>
+  </table>
+</div>
 
 <%= link_to 'Back to Profile | ', user_path(current_user) %>
 <%= link_to 'New', new_vegetable_path %>

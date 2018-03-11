@@ -1,16 +1,23 @@
-<h1>List of Transaction</h1>
+<div align="center">
+  <h1>List of Transaction</h1>
 
-<table>
-  <tr>
-    <th>Nama Pembeli</th>
-    <th>Jenis Sayuran</th>
-    <th>Jumlah</th>
-  </tr>
-  <% @transaction.each do |f| %>
-    <tr>
-      <td><%= f.buyer.nama %></td>
-      <td><%= f.vegetable.jenis %></td>
-      <td><%= f.jumlahtransaksi %></td>
-    </tr>
-  <% end %>
-</table>
+  <div class="col-sm-8">
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th>Nama Pembeli</th>
+          <th>Jenis Sayuran</th>
+          <th>Jumlah</th>
+        </tr>
+      </thead>
+      <% @transaction.each do |f| %>
+        <tr>
+          <td><%= f.buyer.nama %></td>
+          <td><%= f.vegetable.jenis %></td>
+          <td><%= f.jumlahtransaksi %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
+
