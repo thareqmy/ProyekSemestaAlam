@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180301055359) do
+ActiveRecord::Schema.define(version: 20180311101055) do
 
   create_table "buyers", force: :cascade do |t|
     t.string "nama"
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 20180301055359) do
     t.string "active"
     t.integer "chance"
     t.integer "buyers_id"
+    t.boolean "admin", default: false
   end
 
   create_table "vegetables", force: :cascade do |t|

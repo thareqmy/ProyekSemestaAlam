@@ -23,6 +23,11 @@
       <li class="nav-item">
         <%= link_to 'List Transaction', transactions_path, class: "nav-link" %>
       </li>
+      <% if admin? %>
+        <li class="nav-item" >
+          <%= link_to 'Create New User', new_user_path, class: "nav-link" %>
+        </li>
+      <% end %>
     </ul>
     <ul class="navbar-nav right">
       <li class="nav-item">
