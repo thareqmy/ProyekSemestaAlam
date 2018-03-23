@@ -1,6 +1,10 @@
 <h1>PANEN TEROOSS</h1>
 
 <%= form_for(@panen, url: tambahjumlah_path) do |f| %>
+  <div class="form-group">
+    <%= f.label(:vegetable_id, "Pembeli") %><br>
+    <%= f.select(:vegetable_id, options_from_collection_for_select(@vegetable, "id", "jenis")) %>
+  </div>
   <%= f.label(:tambah, "Masukkan jumlah panen") %>
   <%= f.number_field(:tambah) %>
 

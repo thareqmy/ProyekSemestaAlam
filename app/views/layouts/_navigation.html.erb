@@ -11,15 +11,30 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Pembeli
+          Vegetable
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <%= link_to 'Pembeli Baru', new_buyer_path, class: "dropdown-item" %>
-          <%= link_to 'Data Pembeli', buyers_path, class: "dropdown-item" %>
-          <div class="dropdown-divider"></div>
-          <%= link_to 'Transaksi Pembeli', new_transaction_path, class: "dropdown-item" %>
+          <%= link_to 'List Vegetables', vegetables_path, class: "dropdown-item" %>
+          <% if admin? %>
+            <%= link_to 'New Vegetable', new_vegetable_path, class: "dropdown-item" %>
+            <div class="dropdown-divider"></div>
+            <%= link_to 'Panen', tambahjumlah_path, class: "dropdown-item"%>
+          <% end %>
         </div>
       </li>
+      <% if !admin? %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Pembeli
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <%= link_to 'Pembeli Baru', new_buyer_path, class: "dropdown-item" %>
+            <%= link_to 'Data Pembeli', buyers_path, class: "dropdown-item" %>
+            <div class="dropdown-divider"></div>
+            <%= link_to 'Transaksi Pembeli', new_transaction_path, class: "dropdown-item" %>
+          </div>
+        </li>
+      <% end %>
       <li class="nav-item">
         <%= link_to 'List Transaction', transactions_path, class: "nav-link" %>
       </li>

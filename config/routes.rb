@@ -15,8 +15,8 @@ Rails.application.routes.draw do
 
   resources :transactions
 
-  get 'vegetables/:id/tambahjumlah', to: 'panens#tambahjumlah', as: 'tambahjumlah'
-  post 'vegetables/:id/tambahjumlah', to: 'panens#create'
+  get 'tambahjumlah', to: 'panens#tambahjumlah', as: 'tambahjumlah'
+  post 'tambahjumlah', to: 'panens#create'
 
   root 'sessions#new'
 

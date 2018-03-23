@@ -1,4 +1,5 @@
 <%= render 'sessions/navbarlogin' %>
+<%= render 'layouts/massages' %>
 
 <div align="center">
   <div>
@@ -20,5 +21,7 @@
     <div align="center">
       <%= f.submit("Log in", class: "btn btn-primary") %>
     </div>
+
+    <%= link_to 'Sign Up', signup_path %>
   <% end %>
 </div>

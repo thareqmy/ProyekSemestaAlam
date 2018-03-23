@@ -19,13 +19,13 @@ class SessionsController < ApplicationController
         user.active = "no"
       end
       user.save
-      flash.now[:danger] = "There was something wrong with your username or password"
+      flash[:danger] = "There was something wrong with your username or password"
       render 'new'
     elsif user && user.active == "no"
-      flash.now[:danger] = "Your account was freezed because of too many failed login"
+      flash[:danger] = "Your account was freezed because of too many failed login"
       render 'new'
     else
-      flash.now[:danger] = "There was something wrong with your username or password"
+      flash[:danger] = "There was something wrong with your username or password"
       render 'new'
     end
   end

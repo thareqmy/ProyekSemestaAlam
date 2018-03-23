@@ -2,27 +2,19 @@
   <%= form_for(@transaction, :html => {class: "form-horizontal", role: "form"}) do |f| %>
     <div class="form-group">
       <%= f.label(:buyer_id, "Pembeli") %><br>
-      <%= f.select(:buyer_id, options_from_collection_for_select(@buyer, "id", "nama")) %>
+      <%= f.select(:buyer_id, options_from_collection_for_select(@buyer, "id", "nama"), {}, {:class => "col-sm-5 form-control"})%>
     </div>
 
     <div class="form-group">
-      <div class="control-label col-sm-2">
-        <%= f.label(:vegetable_id, "Sayuran :") %> <br>
-      </div>
-      <div class="col-sm-5">
-        <%= f.select(:buyer_id, class: "form-control") do %>
-          <% @vegetable.each do |g| %>
-            <%= content_tag(:option, g.jenis, value: g.id) %>
-          <% end %>
-        <% end %>
-      </div>
+      <%= f.label(:vegetable_id, "Sayuran") %><br>
+      <%= f.select(:vegetable_id, options_from_collection_for_select(@vegetable, "id", "jenis"), {}, {:class => "col-sm-5 form-control"}) %>
     </div>
 
     <div class="form-group">
       <div class="control-label col-sm-2">
         <%= f.label(:jumlahtransaksi) %> <br>
       </div>
-      <div class="col-sm-5">
+      <div class="col-sm-6">
         <%= f.number_field(:jumlahtransaksi, class: "form-control") %>
       </div>
     </div>

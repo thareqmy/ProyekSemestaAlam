@@ -5,13 +5,19 @@
     <table class="table">
       <thead class="thead-light">
         <tr>
+          <% if admin? %>
+              <th>Nama Penjual</th>
+          <% end %>
           <th>Nama Pembeli</th>
           <th>Jenis Sayuran</th>
           <th>Jumlah</th>
         </tr>
       </thead>
-      <% @transaction.each do |f| %>
+      <% @transaction.order('"transactions"."user_id"').each do |f| %>
         <tr>
+          <% if admin? %>
+            <td><%= f.user.username %></td>
+          <% end %>
           <td><%= f.buyer.nama %></td>
           <td><%= f.vegetable.jenis %></td>
           <td><%= f.jumlahtransaksi %></td>

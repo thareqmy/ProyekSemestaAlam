@@ -22,7 +22,11 @@ class TransactionsController < ApplicationController
   end
 
   def index
-    @transaction = current_user.transactions
+    if (admin?)
+      @transaction = Transaction.all
+    else
+      @transaction.order(:jumlah)
+    end
   end
 
   private
