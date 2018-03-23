@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdf91599-5a80-42f9-96de-cce6521e4a3c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/transactions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/transactions_controller.rb" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/_navigation.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_navigation.html.erb" />
       <change beforePath="$PROJECT_DIR$/app/views/sessions/_navbarlogin.html.erb" afterPath="$PROJECT_DIR$/app/views/sessions/_navbarlogin.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
@@ -48,7 +46,7 @@
         <entry file="file://$PROJECT_DIR$/app/views/sessions/_navbarlogin.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="18">
-              <caret line="1" column="50" lean-forward="false" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+              <caret line="1" column="42" lean-forward="false" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -477,12 +475,12 @@
       <workItem from="1521370581876" duration="1460000" />
       <workItem from="1521447898079" duration="1489000" />
       <workItem from="1521561525689" duration="121000" />
-      <workItem from="1521771857862" duration="632000" />
+      <workItem from="1521771857862" duration="710000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106669000" />
+    <option name="totallyTimeSpent" value="106747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="526" y="66" width="940" height="648" extended-state="0" />
@@ -872,7 +870,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/sessions/_navbarlogin.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
-          <caret line="1" column="50" lean-forward="false" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+          <caret line="1" column="42" lean-forward="false" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
           <folding />
         </state>
       </provider>
