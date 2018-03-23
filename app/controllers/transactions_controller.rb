@@ -25,7 +25,7 @@ class TransactionsController < ApplicationController
     if (admin?)
       @transaction = Transaction.all
     else
-      @transaction.order(:jumlah)
+      @transaction = current_user.transactions.all
     end
   end
 
